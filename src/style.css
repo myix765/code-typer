@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-background: #1A1E23;
+    --secondary-background: #22282E;
+    --white: #F7F7F7;
+    --gray-highlight: #77849D;
+}
+
+@font-face {
+    font-family: "Monaco";
+    src: url(./assets/fonts/monaco.ttf);
+}
+
+body {
+    background-color: var(--primary-background);
+    color: var(--white);
+    font-family: "Monaco";
+}

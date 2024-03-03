@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Created with Vectornator (http://vectornator.io/) -->
+<svg height="100%" stroke-miterlimit="10" style="fill-rule:nonzero;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;" version="1.1" viewBox="0 0 1024 1024" width="100%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:vectornator="http://vectornator.io" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs/>
+<clipPath id="ArtboardFrame">
+<rect height="1024" width="1024" x="0" y="0"/>
+</clipPath>
+<g clip-path="url(#ArtboardFrame)" id="Layer-1" vectornator:layerName="Layer 1">
+<path d="M-95.5073-85.2621L1080-85.2621L1080 1080L-95.5073 1080L-95.5073-85.2621Z" fill="#22282e" fill-rule="nonzero" opacity="1" stroke="#22282e" stroke-linecap="butt" stroke-linejoin="round" stroke-width="10" vectornator:layerName="Rectangle 1"/>
+</g>
+<g id="Layer-2" vectornator:layerName="Layer 2">
+<g opacity="1" vectornator:layerName="Group 1">
+<g opacity="1" vectornator:layerName="Group 2">
+<path d="M308.857 324.657L105.714 512L308.857 699.343" fill="none" opacity="1" stroke="#f7f7f7" stroke-linecap="round" stroke-linejoin="round" stroke-width="90" vectornator:layerName="Curve 2"/>
+<path d="M715.143 324.657L918.286 512L809.908 611.948L715.143 699.343" fill="none" opacity="1" stroke="#f7f7f7" stroke-linecap="round" stroke-linejoin="round" stroke-width="90" vectornator:layerName="Curve 1"/>
+</g>
+<g opacity="1" vectornator:layerName="Group 1">
+<path d="M361.571 164C451.829 164 512 168.265 512 238.571C512 313.143 512 635.125 512 785.429C512 860 451.829 860 361.571 860" fill="none" opacity="1" stroke="#f7f7f7" stroke-linecap="round" stroke-linejoin="round" stroke-width="90" vectornator:layerName="Curve 4"/>
+<path d="M662.429 164C572.171 164 512 168.265 512 238.571C512 313.143 512 635.125 512 785.429C512 860 572.171 860 662.429 860" fill="none" opacity="1" stroke="#f7f7f7" stroke-linecap="round" stroke-linejoin="round" stroke-width="90" vectornator:layerName="Curve 3"/>
+</g>
+</g>
+</g>
+</svg>
