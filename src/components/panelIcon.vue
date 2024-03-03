@@ -1,0 +1,6 @@
+<template>
+    <svg height="100%" stroke-miterlimit="10" style="fill-rule:nonzero;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;" version="1.1" viewBox="0 0 30.85 28" width="100%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:vectornator="http://vectornator.io" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <path d="M3.93774 5.2805e-15C1.75116 5.2805e-15-0.000243317 1.78241-0.000243632 3.96899L-0.000243632 24.031C-0.000243632 26.2176 1.75114 28 3.93774 28L26.8835 28C29.07 28 30.8525 26.2176 30.8525 24.031L30.8525 3.96899C30.8525 1.78242 29.07 3.15427e-07 26.8835 5.2805e-15L3.93774 5.2805e-15ZM3.93774 2.17054L26.8835 2.17054C27.8644 2.17054 28.6819 2.98804 28.6819 3.96899L28.6819 24.031C28.6819 25.012 27.8644 25.7984 26.8835 25.7984L3.93774 25.7984C2.95674 25.7984 2.1703 25.0121 2.1703 24.031L2.1703 3.96899C2.1703 2.98802 2.95677 2.17054 3.93774 2.17054Z" fill="#77849d" fill-rule="nonzero" opacity="1" stroke="none" vectornator:layerName="Curve 1"/>
+    <path d="M11.1219 1.09224L11.1219 26.9014" fill="none" opacity="1" stroke="#77849d" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="2.2" vectornator:layerName="path"/>
+    </svg>
+</template>

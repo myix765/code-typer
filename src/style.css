@@ -20,4 +20,5 @@ body {
     background-color: var(--primary-background);
     color: var(--white);
     font-family: "Monaco";
+    text-decoration: none;
 }

@@ -58,7 +58,7 @@
     }
 </script>
 
-<style>
+<style scoped>
     @import './style.css';
     #page-grid {
         width: 100%;
