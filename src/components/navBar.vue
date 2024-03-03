@@ -23,7 +23,6 @@
                 <div>
                     <a href="#">
                         <PanelIcon class="icon-link"></PanelIcon>
-                        <!-- <img src="../assets/icons/panel.svg" alt="Open Settings Panel"> -->
                     </a>
                 </div>
             </div>
@@ -32,79 +31,74 @@
 </template>
 
 <script>
-    import SettingsIcon from '../assets/icons/settings.svg'
-    import ProfileIcon from '../assets/icons/profile.svg'
-    import PanelIcon from './panelIcon.vue'
+import SettingsIcon from '../assets/icons/settings.svg'
+import ProfileIcon from '../assets/icons/profile.svg'
+import PanelIcon from './panelIcon.vue'
 
-    export default {
-        props: {
-            langSelected: {
-                type: String,
-                required: true
-            }
-        },
-        components: {
-            SettingsIcon,
-            ProfileIcon,
-            PanelIcon
-        }
+export default {
+    props: ['langSelected', 'startNew', 'codeBlocks'],
+    components: {
+        SettingsIcon,
+        ProfileIcon,
+        PanelIcon
     }
+}
 </script>
 
 <style scoped>
-    #nav-div {
-        display: flex;
-        height: 100%;
-        align-items: flex-end;
-        justify-content: space-between;
-    }
+#nav-div {
+    display: flex;
+    height: 100%;
+    align-items: flex-end;
+    justify-content: space-between;
+}
 
-    #nav-left {
-        display: flex;
-        height: 46%;
-        width: 80%;
-    }
+#nav-left {
+    display: flex;
+    height: 46%;
+    width: 80%;
+}
 
-    .tab {
-        box-shadow: 0 1.5px 0 var(--secondary-background), 0 -1px 0 var(--gray-highlight), 0 0 0 1px var(--gray-highlight); /* extend 1.5px down just in case */
-        background-color: var(--secondary-background);
-        padding: 1.8% 2%;
-        width: 200px;
-        margin-bottom: 1px;
-        -moz-border-radius: 0px;
-        -webkit-border-radius: 10px 10px 0px 0px;
-        border-radius: 10px 10px 0px 0px; 
-    }
+.tab {
+    box-shadow: 0 1.5px 0 var(--secondary-background), 0 -1px 0 var(--gray-highlight), 0 0 0 1px var(--gray-highlight); /* extend 1.5px down just in case */
+    background-color: var(--secondary-background);
+    padding: 1.8% 2%;
+    width: 200px;
+    margin-bottom: 1px;
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 10px 10px 0px 0px;
+    border-radius: 10px 10px 0px 0px; 
+}
 
-    .start-btn {
-        background-color: var(--primary-background);
-        border: 1px solid var(--gray-highlight);
-        border-radius: 10px;
-        color: var(--white);
-        font-family: "Monaco";
-        padding: 0px 24px;
-        margin: 0.4% 0 1% 1.5%;
-        cursor: pointer;
-    }
+.start-btn {
+    background-color: var(--primary-background);
+    border: 1px solid var(--gray-highlight);
+    border-radius: 10px;
+    color: var(--white);
+    font-family: "Monaco";
+    padding: 0px 3.2%;
+    margin: 0.4% 0 1% 1.5%;
+    cursor: pointer;
+}
 
-    .start-btn:hover {
-        background-color: var(--gray-highlight);
-    }
+.start-btn:hover {
+    background-color: var(--gray-highlight);
+}
 
-    .nav-icons {
-        display: flex;
-        column-gap: 14px;
-        margin: 0.6% 1%;
-    }
+.nav-icons {
+    display: flex;
+    column-gap: 14px;
+    margin: 0.6% 1%;
+}
 
-    .icon-link {
-        cursor: pointer;
-        width: 100%;
-        height: 100%;
-    }
+.icon-link {
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+}
 
-    a {
-        display: flex;
-        height: 24px;
-    }
+a {
+    display: flex;
+    height: 24px;
+}
 </style>

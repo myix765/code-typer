@@ -18,31 +18,31 @@
 </template>
 
 <script>
-    export default {
-        props: ['languages', 'selectLanguage']
-    }
+export default {
+    props: ['languages', 'selectLanguage']
+}
 </script>
 
 <style scoped>
-    #lang-list {
-        display: flex;
-        flex-direction: column;
-        gap: 1vh;
-    }
+#lang-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}
 
-    .lang-option {
-        display: flex;
-        align-items: center;
-        gap: 3%;
-        cursor: pointer;
-        padding: 2% 4%;
-    }
+.lang-option {
+    display: flex;
+    align-items: center;
+    gap: 3%;
+    cursor: pointer;
+    padding: 2% 4%;
+}
 
-    .lang-option:hover {
-        background-color: rgb(116, 145, 155);
-    }
+.lang-option:hover {
+    background-color: rgb(116, 145, 155);
+}
 
-    .lang-icon {
-        width: 24px;
-    }
+.lang-icon {
+    width: 24px;
+}
 </style>
