@@ -6,5 +6,13 @@
     {
         "language": "JavaScript",
         "code": "btn.addEventListener('click', changeColor);\n\nfunction changeColor() {\n\tname.style.color = 'blue';\n}"
+    },
+    {
+        "language": "Python",
+        "code": "price = 50\n\nif price > 100:\n\tprint(\"price is greater than 100\")\nelif price == 100:\n\tprint(\"price is 100\")\nelse price < 100:\n\tprint(\"price is less than 100\")"
+    },
+    {
+        "language": "JavaScript",
+        "code": "function factorial(n) {\n\tif (n === 0 || n === 1) {\n\t\treturn 1;\n\t} else {\n\t\treturn n * factorial(n - 1);\n\t}\n}"
     }
 ]

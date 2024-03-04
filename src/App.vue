@@ -3,12 +3,14 @@
         <NavBar
             id="navbar"
             :lang-selected="activeLang"
+            :length="codeJSONlength"
+            :start-new-test="getRandomIndex"
         ></NavBar>
         <LanguagePanel
             id="language-panel"
             class="panel"
             :languages="languages"
-            :select-language="(langName) => activeLang = langName"
+            :select-language="changeActiveLang"
         ></LanguagePanel>
         <HistoryPanel
             id="history-panel"
@@ -17,6 +19,9 @@
         <TypingArea
             id="type-panel"
             class="panel"
+            @receive-length="getLength"
+            :current-block-index="currentBlockIndex"
+            :active-lang="activeLang"
         ></TypingArea>
         <StatsPanel
             id="stats-panel"
@@ -52,12 +57,26 @@ export default {
                     langName: "JavaScript"
                 }
             ],
-            activeLang: "Python"
+            activeLang: "Python",
+            codeJSONlength: 0,
+            currentBlockIndex: 0,
         }
     },
     methods: {
+        getLength(length) {
+            this.codeJSONlength = length
+            this.getRandomIndex()
+        },
+        getRandomIndex() {
+            this.currentBlockIndex = Math.floor(Math.random() * this.codeJSONlength)
+        },
+        changeActiveLang(langName) {
+            this.activeLang = langName
+            this.getRandomIndex()
+        }
 
-    }
+        // (langName) => activeLang = langName
+    },
 }
 </script>
 
