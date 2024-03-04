@@ -57,29 +57,33 @@ export default {
 
 #nav-left {
     display: flex;
-    height: 46%;
+    align-items: flex-end;
+    height: 48%;
     width: 80%;
 }
 
 .tab {
     box-shadow: 0 1.5px 0 var(--secondary-background), 0 -1px 0 var(--gray-highlight), 0 0 0 1px var(--gray-highlight); /* extend 1.5px down just in case */
     background-color: var(--secondary-background);
-    padding: 1.8% 2%;
+    padding: 1.8% 2.2%;
+    height: 100%;
     width: 200px;
-    margin-bottom: 1px;
-    -moz-border-radius: 0px;
+    margin-bottom: 1px; /* to hide bottom corner box shadows */
     -webkit-border-radius: 10px 10px 0px 0px;
     border-radius: 10px 10px 0px 0px; 
 }
 
 .start-btn {
     background-color: var(--primary-background);
-    border: 1px solid var(--gray-highlight);
+    border: none;
+    box-shadow: 0 0 0 1px var(--gray-highlight);
     border-radius: 10px;
-    color: var(--white);
-    font-family: "Monaco";
-    padding: 0px 3.2%;
-    margin: 0.4% 0 1% 1.5%;
+    color: inherit;
+    font-family: inherit;
+    padding: 0 3.2%;
+    height: 80%;
+    margin-left: 1.5%;
+    align-self: flex-start;
     cursor: pointer;
 }
 

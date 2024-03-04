@@ -87,8 +87,8 @@ export default {
     width: 100%;
     height: 100vh;
     display: grid;
-    grid-template-columns: repeat(20%);
-    grid-template-rows: repeat(calc(100vh / 8));
+    grid-template-columns: repeat(5, 20%);
+    grid-template-rows: repeat(7, calc(100vh / 8));
     grid-template-areas: 
         "lang nav nav nav nav"
         "lang type type type stats"
@@ -127,5 +127,7 @@ export default {
 
 .panel {
     padding: 4vh 0 0 2vw;
+    width: 100%;
+    height: 100%;
 }
 </style>
