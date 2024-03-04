@@ -7,7 +7,9 @@
                 <div class="tab">
                     <p>{{ langSelected }}</p>
                 </div>
-                <button class="start-btn">Start New Test</button>
+                <button
+                    class="start-btn"
+                    @click.prevent="startNewTest()">Start New Test</button>
             </div>
             <div class="nav-icons">
                 <div>
@@ -36,7 +38,7 @@ import ProfileIcon from '../assets/icons/profile.svg'
 import PanelIcon from './panelIcon.vue'
 
 export default {
-    props: ['langSelected', 'startNew', 'codeBlocks'],
+    props: ['langSelected', 'length', 'startNewTest'],
     components: {
         SettingsIcon,
         ProfileIcon,
