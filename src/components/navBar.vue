@@ -82,7 +82,7 @@ export default {
     font-family: inherit;
     padding: 0 3.2%;
     height: 80%;
-    margin-left: 1.5%;
+    margin-left: 1.4%;
     align-self: flex-start;
     cursor: pointer;
 }
