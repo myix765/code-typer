@@ -60,6 +60,7 @@ export default {
     align-items: flex-end;
     height: 48%;
     width: 80%;
+    margin-bottom: 1px; /* to hide bottom corner box shadows of the tab */
 }
 
 .tab {
@@ -68,7 +69,6 @@ export default {
     padding: 1.8% 2.2%;
     height: 100%;
     width: 200px;
-    margin-bottom: 1px; /* to hide bottom corner box shadows */
     -webkit-border-radius: 10px 10px 0px 0px;
     border-radius: 10px 10px 0px 0px; 
 }

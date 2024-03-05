@@ -19,9 +19,7 @@
         <TypingArea
             id="type-panel"
             class="panel"
-            @receive-length="getLength"
-            :current-block-index="currentBlockIndex"
-            :active-lang="activeLang"
+            :current-code-snippet="currentCodeSnippet"
         ></TypingArea>
         <StatsPanel
             id="stats-panel"
@@ -36,6 +34,8 @@ import LanguagePanel from './components/languagePanel.vue'
 import HistoryPanel from './components/historyPanel.vue'
 import TypingArea from './components/typingArea.vue'
 import StatsPanel from './components/statsPanel.vue'
+
+import codeJson from './assets/codeSnippets.json'
 
 export default {
     components: {
@@ -59,23 +59,30 @@ export default {
             ],
             activeLang: "Python",
             codeJSONlength: 0,
-            currentBlockIndex: 0,
+            currentSnippetIndex: 0,
+            codeSnippets: [],
+            currentCodeSnippet: "",
         }
     },
     methods: {
-        getLength(length) {
-            this.codeJSONlength = length
-            this.getRandomIndex()
-        },
         getRandomIndex() {
-            this.currentBlockIndex = Math.floor(Math.random() * this.codeJSONlength)
+            this.currentSnippetIndex = Math.floor(Math.random() * this.codeJSONlength)
+            this.currentCodeSnippet = this.codeSnippets[this.currentSnippetIndex]
         },
         changeActiveLang(langName) {
             this.activeLang = langName
+            this.getCodeOfLang()
+        },
+        getCodeOfLang() {
+            this.codeSnippets = codeJson
+                .filter(snippet => snippet.language === this.activeLang)
+                .map(snippet => snippet.code)
+            this.codeJSONlength = this.codeSnippets.length
             this.getRandomIndex()
-        }
-
-        // (langName) => activeLang = langName
+        },
+    },
+    created() {
+        this.getCodeOfLang()
     },
 }
 </script>
