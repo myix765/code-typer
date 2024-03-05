@@ -1,7 +1,7 @@
 [
     {
         "language": "Python",
-        "code": "names = ['Kelly', 'Jessa', 'Emma']\nfor name in names:\n\tcount = 0\n\twhile count < 5:\n\t\tprint(name, end=' ')\n\t\tcount = count + 1\n\tprint()"
+        "code": "names = ['Kelly', 'Jessa', 'Emma']\nfor name in names:\n\tcount = 0\n\twhile count < 5:\n\t\tprint(name, end=' ')\n\t\tcount += 1"
     },
     {
         "language": "JavaScript",
