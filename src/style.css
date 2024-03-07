@@ -8,6 +8,7 @@
     --primary-background: #1A1E23;
     --secondary-background: #22282E;
     --white: #F7F7F7;
+    --gray: #929495;
     --gray-highlight: #77849D;
 }
 
@@ -21,4 +22,13 @@ body {
     color: var(--white);
     font-family: "Monaco";
     text-decoration: none;
+}
+
+textarea {
+    resize: none;
+    font: inherit;
+    color: inherit;
+    background-color: inherit;
+    overflow: hidden;
+    border: none;
 }
