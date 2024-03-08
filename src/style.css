@@ -10,6 +10,7 @@
     --white: #F7F7F7;
     --gray: #929495;
     --gray-highlight: #77849D;
+    --wrong-highlight: rgb(222, 70, 70)
 }
 
 @font-face {
@@ -31,4 +32,7 @@ textarea {
     background-color: inherit;
     overflow: hidden;
     border: none;
+    outline: none;
+    height: 100%;
+    width: 100%;
 }
